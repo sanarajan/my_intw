@@ -21,7 +21,7 @@ class CreateUsersTable extends Migration
             $table->unsignedBigInteger('Fk_designation');
             $table->foreign('Fk_department')->references('id')->on('departments');
             $table->foreign('Fk_designation')->references('id')->on('designations');           
-            $table->timestamp('created_at')->nullable();
+            $table->timestamp('created_at');
         });
     }
 
