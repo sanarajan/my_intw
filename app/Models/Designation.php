@@ -9,7 +9,6 @@ class Designation extends Model
 {
     use HasFactory;
     protected $table = 'designations';
-    protected $fillable = ['name'];
     public $timestamps = ["created_at"];
     const UPDATED_AT = null;
     public function ds_users()

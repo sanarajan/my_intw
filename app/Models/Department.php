@@ -9,7 +9,6 @@ class Department extends Model
 {
     use HasFactory;
     protected $table = 'departments';
-    protected $fillable = ['name'];
     public $timestamps = ["created_at"];
     const UPDATED_AT = null;
     public function users()
